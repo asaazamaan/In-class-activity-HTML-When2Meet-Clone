@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When2Meet Clone</title>
+</head>
+<body>
+    <header>
+        <h1>When2meet</h1>
+        <ul>
+            <li> <a href="#createEvent"> Create Event</a></li>
+            <li> <a href="#availability"> Select availavbility</a></li>
+            <li> <a href="#results"> View Results</a></li>
+            <li> <a href="#signUp"> Sign Up</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <h2 id = createEvent >Create Event</h2>
+            <form >
+                <label for="eventName">Event Name:</label>
+                <input type="text" name="eventName" id="eventName">
+
+                <label for="evenDis">Event Discription:</label>
+                <textarea name="evenDis" id="evenDis"></textarea>
+
+                <label for="startDate">Start Date:</label>
+                <input type="date" name="startDate" id="startDate">
+
+                <label for="endtDate">End Date:</label>
+                <input type="date" name="endtDate" id="endtDate">
+
+                <label for="inc">Time Increament:</label>
+                <select  id="inc"  name="inc">
+                    <option value="15 minutes"> 15 minutes</option>
+                    <option value="30 minutes"> 30 minutes</option>
+                    <option value="45 minutes"> 45 minutes</option>
+                </select>
+
+                <button type="submit">
+                    create Event
+                </button>
+              
+            </form>
+        </section>
+     
+        <section>
+            <h2 id = availability >Input Availability</h2>
+            <Table>
+                <tr>
+                    <th>Time</th>
+                    <th><label for="mon9">Monday</label></th>
+                    <th><label for="Tue9">Tuesday</label></th>
+                    <th><label for="Wed9">Wednesday</label></th>
+                    <th><label for="Thr9">Thursday</label></th>
+                    <th><label for="Fri9">Friday</label></th>
+                </tr>
+
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>
+                        <input type="checkbox" id="mon9" name="availabilityTime">
+                    </td>
+                    <td>
+                        <input type="checkbox" id="Tue9"  name="availabilityTime">
+                    </td>
+
+                    <td>
+                        <input type="checkbox" id="Wed9"  name="availabilityTime">
+                    </td>
+
+                    <td>
+                        <input type="checkbox" id="Thr9" name="availabilityTime">
+                    </td>
+
+                    <td>
+                        <input type="checkbox" id="Fri9"  name="availabilityTime">
+                    </td>
+                </tr>
+            </Table>
+
+            <button type="submit">
+                Submit Availability
+            </button>
+
+        </section>
+
+        <section>
+
+            <h2 id = results >View Results</h2>
+            <Table>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+
+                <tr>
+                    <td>9:00 AM</td>
+                    <td>
+                        3 available
+                    </td>
+                    <td>
+                        2 available
+                    </td>
+
+                    <td>
+                        4 available
+                    </td>
+
+                    <td>
+                        1 available
+                    </td>
+
+                    <td>
+                        5 available
+                    </td>
+                </tr>
+            </Table>
+            <p> Sharable Link: <a href="https://When2Meet.com/event?id=123456" target="_blank">https://When2Meet.com/event?id=123456</a></p>
+
+          
+
+        </section>
+
+        <section>
+            <h2 id = signUp >Sign Up</h2>
+            <label for="userName"> Username:</label>
+            <input type="text" name="userName" id="userName">
+
+            <label for="email"> Email:</label>
+            <input type="email" name="email" id="email">
+
+            
+            <label for="password"> Password:</label>
+            <input type="password" name="password" id="password">
+
+            <button type="submit">
+                Sign up
+            </button>
+            <br>
+            2024 When2Meet. All rights are reserved
+
+
+        </section>
+
+        
+    </main>
+    
+</body>
+</html>
